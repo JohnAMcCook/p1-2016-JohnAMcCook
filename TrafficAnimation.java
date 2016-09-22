@@ -71,6 +71,8 @@ public class TrafficAnimation extends JPanel
 		// This draws a green square. Replace it with your own object.
 		int squareSide = height/5;
 		int squareY = height/2 - squareSide/2;
+		g.setColor(Color.black);
+		g.fillRect(0, height/2, width, height/3);
 		g.setColor(Color.gray);
 		g.fillRect(xOffset, height/5, width/3, height/2);
 		g.setColor(Color.green);
@@ -81,7 +83,7 @@ public class TrafficAnimation extends JPanel
 		g.setColor(Color.red);
 		g.setFont(new Font("Helvetica", Font.BOLD, height/10));
 		g.drawString("What's up m8?!", width/4, (height/2)+squareSide+(squareSide/2));
-		g.fillOval(width - width, (height/2)*3/2, width/4, height/4);
+		g.fillOval(width - (width - width/50), (height/2)*3/2, width/4, height/4);
 	}
 
 
